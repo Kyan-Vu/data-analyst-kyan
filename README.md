@@ -4,7 +4,7 @@
 ## Project Description
 This project is a descriptive analysis of the recruitment process using internal HR datasets. The objective is to identify key factors that contribute to long time-to-hire, uncover bottlenecks in the recruitment pipeline, and generate insights that support strategies to streamline hiring workflows and reduce overall recruitment time.
 
-![ETL Pipeline Diagram](https://github.com/Kyan-Vu/data-analyst-kyan/blob/main/images/ETL_Pipeline_Diagram.png)
+![ETL Pipeline Diagram](./images/ETL_Pipeline_Diagram)
 
 *Figure 1. ETL workflow of the recruitment process using AWS S3, Glue, DataBrew, and Athena.*
 
