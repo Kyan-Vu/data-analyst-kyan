@@ -6,6 +6,8 @@ This project is a descriptive analysis of the recruitment process using internal
 
 ![ETL Pipeline Diagram](https://github.com/Kyan-Vu/data-analyst-kyan/blob/main/images/ETL_Pipeline_Diagram.png)
 
+*Figure 1. ETL workflow of the recruitment process using AWS S3, Glue, DataBrew, and Athena.*
+
 ---
 
 ## Project Title
