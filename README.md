@@ -303,7 +303,7 @@ Teams simulated cloud cost forecasts using the AWS Pricing Calculator across thr
   - Moderate compute usage raised costs slightly.
 
 - **Data Analysis**:  
-  - Used EC2 and data processing/storage at scale.
+  - Used Athena and data processing/storage at scale.
   - Incurred the highest cost due to extended compute times and traffic.
 
 ** Result Explanation**:  
