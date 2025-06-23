@@ -257,29 +257,29 @@ The following figure consolidates key concepts and case studies from Module 2, i
 
 ### Case Study #4: Total Cost of Ownership (TCO) – Delaware North
 
-** Company Overview**:  
+**Company Overview**:  
 Delaware North is a large global hospitality company operating in 200+ locations, serving over 500 million customers annually with $3B in revenue.
 
-** Problem**:  
+**Problem**:  
 They were facing aging, costly on-premises infrastructure and increasing pressure to rapidly deploy scalable digital solutions.
 
-** Objectives**:
+**Objectives**:
 - Replace outdated hardware with cloud infrastructure.
 - Reduce operational costs.
 - Improve agility and provisioning time.
 - Justify investment with a positive ROI.
 
-** Solution Implemented**:
+**Solution Implemented**:
 - Migrated 205 servers and nearly all applications to AWS.
 - Adopted 3-year EC2 Reserved Instances for predictable cost savings.
 - Retained 20 local servers for specialized tasks.
 
-** Outcome**:
+**Outcome**:
 - Saved $3.5M over five years.
 - Reduced provisioning time from 2–3 weeks to just 1 day.
 - Enhanced disaster recovery capabilities, data security, and overall agility.
 
-** Result Explanation**:  
+**Result Explanation**:  
 By using AWS, Delaware North achieved a scalable, flexible, and more cost-effective IT environment. Reserved Instances helped reduce cost predictability, while cloud-based deployments enabled rapid time-to-value for new services.
 
 ![Figure 8: Total Cost of Ownership – Delaware North](./images/CaseStudy4.png)  
@@ -287,13 +287,13 @@ By using AWS, Delaware North achieved a scalable, flexible, and more cost-effect
 
 ### Case Study #5: AWS Pricing Calculator
 
-** Objective**:  
+**Objective**:  
 Teams simulated cloud cost forecasts using the AWS Pricing Calculator across three workload scenarios:  
 1. **Data Storage**  
 2. **Data Profiling and Cleaning**  
 3. **Data Analysis**
 
-** Approach & Insights**:
+**Approach & Insights**:
 - **Data Storage**:  
   - Used Amazon S3 with moderate storage demand.
   - Forecasted cost was minimal due to S3’s cost-efficient pricing and durability.
@@ -306,7 +306,7 @@ Teams simulated cloud cost forecasts using the AWS Pricing Calculator across thr
   - Used Athena and data processing/storage at scale.
   - Incurred the highest cost due to extended compute times and traffic.
 
-** Result Explanation**:  
+**Result Explanation**:  
 Each scenario provided valuable insight into the monthly cost and resource usage expectations. The pricing calculator enabled better budgeting, workload comparison, and identification of cost drivers, empowering each team to optimize their AWS architecture before deployment.
 
 ![Figure 9: AWS Pricing Calculator Results](./images/CaseStudy5.png)  
@@ -316,21 +316,21 @@ Each scenario provided valuable insight into the monthly cost and resource usage
 
 **Department Analyzed**: Human Resources (HR)
 
-** Support Needs**:
+**Support Needs**:
 - 24/7 access to payroll and employee data platforms (SaaS).
 - Quick response to technical issues.
 - Reliable infrastructure to scale during peak onboarding/offboarding periods.
 - Access to best-practice guidance and billing support.
 
-** Selected Plan**: **Business Support**
+**Selected Plan**: **Business Support**
 
-** Justification**:
+**Justification**:
 - Includes AWS Trusted Advisor for continuous optimization.
 - Provides access to Cloud Support Engineers for technical help.
 - Covers guidance for architecture, cost control, and scaling.
 - Enables support for critical systems at production scale.
 
-** Result Explanation**:  
+**Result Explanation**:  
 The Business Support plan strikes a balance between cost and comprehensive support. It allows HR to maintain high service availability, reduce downtime risk, and gain operational insight through AWS tools—all essential for a department that manages sensitive employee information.
 
 ![Figure 10: Support Plan for HR](./images/CaseStudy6.png)  
@@ -362,10 +362,10 @@ The following figure consolidates the key concepts and case studies from Module 
 
 ### Case Study #7: AWS Global Infrastructure
 
-** Use Case Summary**:  
+**Use Case Summary**:  
 An organization needs to store and access HR-related business license data securely while also providing fast, global access to public content for students.
 
-** Infrastructure Strategy**:  
+**Infrastructure Strategy**:  
 The organization leveraged different AWS layers to serve distinct users:
 
 1. **Regional Edge Cache** (Seattle):  
@@ -380,7 +380,7 @@ The organization leveraged different AWS layers to serve distinct users:
    - Full access and secure storage for HR staff.
    - Protected by IAM policies, encryption, and availability zones.
 
-** Result Explanation**:  
+**Result Explanation**:  
 This case highlights how AWS infrastructure supports performance and privacy needs simultaneously. Cached content enables fast, low-cost global delivery for non-sensitive data, while Regions enforce the highest level of control and compliance for internal users.
 
 | Business Licenses      | Regional Edge Cache | Edge Location | Region |
