@@ -152,9 +152,9 @@ The following diagram illustrates the comparison between Traditional and Cloud C
 
 *Figure 3. Traditional Computing Model vs. Cloud Computing Model (Case Study 1)*
 
-### Dataset Considerations Table:
+### Dataset Table:
 
-| **Dataset Consideration** | **Traditional Computing Model**                                                  | **Cloud Computing Model**                                                                 |
+| **Business Licenses**     | **Traditional Computing Model**                                                  | **Cloud Computing Model**                                                                 |
 |---------------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | **Location**              | Fixed – hosted in a single corporate data center (e.g., on-site Vancouver)       | Flexible – hosted in AWS-managed data centers across Regions (e.g., Canada Central)        |
 | **Access**                | Internal access only via VPN, limited to specific devices and personnel          | Role-based access granted to authorized users over the internet via secure protocols       |
@@ -184,7 +184,7 @@ This case study explores the four major **cloud deployment models**—**Private 
 
 ### Dataset Considerations Table
 
-| **Dataset Consideration** | **Private Cloud**                                                              | **Public Cloud**                                                                 | **Hybrid Cloud**                                                                 | **Multi Cloud**                                                                 |
+| **Business Licenses** | **Private Cloud**                                                              | **Public Cloud**                                                                 | **Hybrid Cloud**                                                                 | **Multi Cloud**                                                                 |
 |---------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | **Location**              | Hosted in the organization’s internal or dedicated environment                  | Hosted in public cloud infrastructure managed by a third-party provider          | Combination of internal servers and public cloud (e.g., AWS and on-premise mix) | Spread across multiple cloud providers and on-premise environments              |
 | **Access**                | Limited to internal employees or approved devices; typically VPN-restricted     | Publicly available over the internet with access control                         | Access control split between private and public domains                          | Coordinated access control policies across multiple providers                   |
@@ -213,9 +213,9 @@ This case study explores the three primary cloud service models—**IaaS (Infras
 
 *Figure 5: Comparison of Cloud Service Models based on location, access, and privacy.*
 
-### Dataset Considerations:
+### Dataset:
 
-| Dataset Consideration | IaaS                                                                 | PaaS                                                                 | SaaS                                                                 |
+| Business Licenses     | IaaS                                                                 | PaaS                                                                 | SaaS                                                                 |
 |-----------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
 | **Location**          | Data hosted in AWS-managed infrastructure (e.g., EC2 in Canada Central). HR datasets are stored in Amazon S3 and processed through Glue. | Hosted on managed infrastructure using AWS Elastic Beanstalk. HR datasets are stored in S3 and accessed via Glue and Athena. | Fully hosted in vendor-managed infrastructure (e.g., Workday, Office 365). Data location governed by vendor’s cloud policy. |
 | **Access**            | Access via IAM roles and EC2 CLI by the HR operations team. Secured using encryption and security groups. | Access through deployment and monitoring consoles. IAM-based role management still applies. | Users access SaaS through a web UI or app. Admins manage access via role assignments and service settings. |
@@ -383,7 +383,7 @@ The organization leveraged different AWS layers to serve distinct users:
 ** Result Explanation**:  
 This case highlights how AWS infrastructure supports performance and privacy needs simultaneously. Cached content enables fast, low-cost global delivery for non-sensitive data, while Regions enforce the highest level of control and compliance for internal users.
 
-| Dataset Consideration | Regional Edge Cache | Edge Location | Region |
+| Business Licenses      | Regional Edge Cache | Edge Location | Region |
 |------------------------|---------------------|---------------|--------|
 | **Location** | Cached in Seattle | Accessed via Vancouver | Stored in Oregon or Canada Central |
 | **Access**   | No direct access required | Students retrieve content from cache | Full access for HR team |
