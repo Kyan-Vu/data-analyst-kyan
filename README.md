@@ -119,6 +119,22 @@ Based on findings, the following improvements are recommended:
 
 ---
 
+# 📘 AWS Module 1 – Cloud Fundamentals
+
+## 🧩 Visual Summary of Module 1
+
+The image below summarizes all core concepts from Module 1, including:
+
+- Key cloud computing concepts
+- Case Study #1: Traditional vs. Cloud Computing Model
+- Case Study #2: Cloud Deployment Models
+- Case Study #3: Cloud Service Models
+- Knowledge Check 
+
+![Module 1 Portfolio Summary](./images/Portfolio-Module1.png)
+
+---
+
 ## AWS Deployment and Service Models  
 **Module 1 Case Study – Traditional Computing Model vs. Cloud Computing Model**
 
@@ -132,7 +148,7 @@ The diagram illustrates two different infrastructure models:
 
 The following diagram illustrates the comparison between Traditional and Cloud Computing models:
 
-![Case Study 1 Diagram](./images/CaseStudy1)
+![Case Study 1 Diagram](./images/Portfolio-Module#1.png)
 
 *Figure 2. Traditional Computing Model vs. Cloud Computing Model (Case Study 1)*
 
@@ -162,9 +178,9 @@ This shift reduces reliance on local IT staff for manual updates and security, w
 ### Case Study Summary:
 This case study explores the four major **cloud deployment models**—**Private Cloud**, **Public Cloud**, **Hybrid Cloud**, and **Multi-Cloud**. Each model is analyzed based on key dataset considerations including **location**, **access**, and **privacy**.
 
-### 🖼 Visual Overview:
+### Visual Overview:
 
-![Cloud Deployment Models](./docs/CaseStudy2.png)
+![Cloud Deployment Models](./images/CaseStudy2.png)
 
 *Figure 3. Cloud Deployment Models: Private, Public, Hybrid, and Multi-Cloud*
 
@@ -192,4 +208,37 @@ The comparison between Private Cloud, Public Cloud, Hybrid Cloud, and Multi-Clou
 - **Multi-Cloud** deployment is often driven by the need for redundancy, vendor diversification, or specialized service availability across providers (e.g., AWS, Azure, GCP). It enhances fault tolerance and avoids vendor lock-in but increases operational complexity due to the need to manage multiple platforms, APIs, and compliance policies.
 
 This analysis highlights how AWS, as part of public, hybrid, or multi-cloud environments, can support organizations in aligning their IT strategy with business priorities — such as compliance, scalability, disaster recovery, and cost optimization.
+
+---
+
+## Case Study #3 – Cloud Service Models
+
+This case study explores the three primary cloud service models—**IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service)**—and how they affect an organization’s control over data, infrastructure, access, and privacy.
+
+### Visual Overview:
+
+![Case Study 3 – Cloud Service Models](./images/CaseStudy3.png)
+
+*Figure 4: Comparison of Cloud Service Models based on location, access, and privacy.*
+
+### Dataset Considerations:
+
+| Dataset Consideration | IaaS                                                                 | PaaS                                                                 | SaaS                                                                 |
+|-----------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Location**          | Data hosted in AWS-managed infrastructure (e.g., EC2 in Canada Central). HR datasets stored in Amazon S3 and processed through Glue. | Hosted on managed infrastructure using AWS Elastic Beanstalk. HR datasets stored in S3 and accessed via Glue and Athena. | Fully hosted in vendor-managed infrastructure (e.g., Workday, Office 365). Data location governed by vendor’s cloud policy. |
+| **Access**            | Access via IAM roles and EC2 CLI by the HR operations team. Secured using encryption and security groups. | Access through deployment and monitoring consoles. IAM-based role management still applies. | Users access SaaS through a web UI or app. Admins manage access via role assignments and service settings. |
+| **Privacy**           | Full responsibility lies with the client. HR team manages IAM, KMS, security groups, encryption, and auditing. | Privacy is a shared responsibility. AWS manages the infrastructure, while users control the app layer and access. | Vendor manages most privacy concerns. HR operations define access roles but rely on vendor’s internal compliance framework. |
+
+### Explanation of the Result:
+
+This case study highlights the **trade-offs between control, responsibility, and convenience** in cloud service delivery:
+
+- **IaaS (Infrastructure as a Service)** offers the **most control and flexibility**. HR departments must manage the full stack—from networking and security to storage and compute. This model is ideal for custom applications requiring fine-tuned infrastructure settings and deeper data control.
+
+- **PaaS (Platform as a Service)** simplifies infrastructure management by offering pre-configured development environments. This enables developers and HR analysts to **focus on business logic** and application development without worrying about the underlying OS or server setup. It’s best for teams needing speed and reduced operational overhead.
+
+- **SaaS (Software as a Service)** provides **fully managed software solutions**. This is ideal for non-technical HR teams needing quick access to tools like payroll, performance tracking, or employee management without building or maintaining applications. However, **control over data privacy and residency is limited** to the provider's compliance frameworks.
+
+By analyzing service models this way, organizations can make informed decisions depending on their regulatory environment, budget, and technical expertise.
+
 
